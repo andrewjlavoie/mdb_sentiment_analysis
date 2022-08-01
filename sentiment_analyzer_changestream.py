@@ -5,8 +5,6 @@ import pprint
 
 import config
 
-_stopwords = nltk.corpus.stopwords.words('english')
-
 if __name__ == "__main__":
     client = pymongo.MongoClient(config.mdb_uri)
     collection = client['reddit']['testing']
