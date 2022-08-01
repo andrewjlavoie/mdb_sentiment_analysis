@@ -6,7 +6,7 @@ import time
 import config
 
 client = pymongo.MongoClient(config.mdb_uri)
-collection = client['reddit']['testing']
+collection = client[config.db][config.collection]
 
 reddit = praw.Reddit(
     client_id=config.reddit_client_id,
