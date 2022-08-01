@@ -7,7 +7,7 @@ import config
 
 if __name__ == "__main__":
     client = pymongo.MongoClient(config.mdb_uri)
-    collection = client['reddit']['testing']
+    collection = client[config.db][config.collection]
 
     change_stream = collection.watch()
 
