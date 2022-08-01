@@ -7,6 +7,8 @@ reddit_user_agent='console:reddit_to_mdb:0.1'
 
 #mdb uri
 mdb_uri = ''
+db = ''
+collection = ''
 
 #subreddits to crawl
 subreddits_most_popular = [
